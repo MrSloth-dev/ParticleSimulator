@@ -1,4 +1,5 @@
+#!/bin/zsh
+
 
 set -xe
-
-clang -lraylib main.c -g
+clang main.c particles.c -O2 -lraylib -lm -o particle -g
